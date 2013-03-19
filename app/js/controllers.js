@@ -33,8 +33,9 @@ function PromptCtrl($scope) {
         shortHostname: ['\\h', 'Short Hostname (host)', 'edenprime'],
         fullWorkingDir: ['\\w', 'Full Working Directory (/home/user/Documents)', '/etc/nginx'],
         basenameWorkingDir: ['\\W', 'Basename Working Dir (Documents)', 'nginx'],
-        time24: ['\\t', 'Time 24h', '18:00'],
-        time12: ['\\T', 'Time 12', '06:00 PM']
+        time24: ['\\t', 'Time 24h', '18:00:00'],
+        time12: ['\\T', 'Time 12', '06:00:00'],
+        newLine: ['\\n', 'New Line', '']
     };
 
     $scope.restorePrompt = '\\[\\e[0m\\]';
