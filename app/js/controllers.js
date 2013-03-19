@@ -4,7 +4,7 @@ function PromptCtrl($scope) {
     $scope.appName = 'Prompt Generator';
     $scope.appVersion = '0.1';
     $scope.appDescription = 'Easily generate the prompt for your terminal';
-    $scope.author = 'Adrian Espinosa';
+    $scope.author = 'aesptux';
 
 
     $scope.colors = {

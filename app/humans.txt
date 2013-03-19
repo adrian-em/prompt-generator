@@ -1,0 +1,8 @@
+/* TEAM */
+Your title: Adrian Espinosa.
+Site: adrianespinosa.com
+Twitter: @aesptux
+
+/* SITE */
+Technology: JavaScript, AngularJS
+Software: Sublime Text 2

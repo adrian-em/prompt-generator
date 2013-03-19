@@ -15,10 +15,12 @@
             <div class="page-header">
                 <h1>{{ appName }}</h1>
                 <small>{{ appDescription }}</small>
+
             </div>
+
         </div>
 
-        <div class="span6 offset2 text-center">
+        <div class="span7 offset2 text-center">
 
         <form class="form-horizontal">
             <div class="control-group" ng-show="!form.customText">
@@ -48,23 +50,22 @@
                 </div>
             </div>
 
-        <a href="" class="btn" ng-click="addElement(form)">Push Element</a>
-        <a href="" class="btn" ng-click="removeElement(form)">Remove Last Element</a>
+        <a href="" class="btn btn-primary" ng-click="addElement(form)">Push Element</a>
+        <a href="" class="btn btn-primary" ng-click="removeElement(form)">Remove Last Element</a>
 
         </form>
         <div>TODO
             <p>Examples</p>
             <p>Instructions</p>
-            <p>Hide show custom text</p>
             <p>Select code on click</p>
             <p>tests</p>
-            <p>credits (author, social networks)</p>
-            <p>humans, robots</p>
-        </div>
+         </div>
+
+
     </div>
 
     <div class="row">
-        <div class="span12 text-center">
+        <div class="span11 offset1 text-center">
             <code><span ng-repeat='p in prompt'><span>{{colors[p.color]}}{{p.customText}}{{variables[p.element][0]}}</span></span>{{restorePrompt}}</code>
             <br />
             <div id="promptPreview">
@@ -72,8 +73,47 @@
             </div>
         </div>
     </div>
+    <br /><br /><br />
+    <div class="row">
+        <div class="span11 text-center">
+                <hr />
+                <a href="#instructionsModal" role="button" class="btn btn-link" data-toggle="modal">Instructions</a>
+                <a href="#examplesModal" role="button" class="btn btn-link" data-toggle="modal">Examples</a>
+                <p>Developed by <a href="http://www.twitter.com/{{ author }}/">{{ author }}</a>.</p>
+                <p>Check the source code and open issues at <a href="https://github.com/aesptux/prompt-generator">GitHub</a></p>
+
+        </div>
+    </div>
 </div>
 
+
+<!-- Instructions -->
+<div id="instructionsModal" class="modal hide fade" role="dialog" aria-labelledby="instructionsModal" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="instructionsModal">Instructions</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+
+<!-- Examples -->
+<div id="examplesModal" class="modal hide fade" role="dialog" aria-labelledby="examplesModal" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="examplesModal">Examples</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
 
 
 
